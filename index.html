@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink2Go - Кавовий напій</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header>
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <img src="img/shkm.png" alt="Drink2Go Logo">
+                </a>
+                <div class="header-tagline">
+                    Школа<br>Комп'ютерної Майстерності
+                </div>
+            </div>
+        
+            <nav class="navigation">
+                <div class="box__a">
+                    <a href="#">ГОЛОВНА</a>
+                </div>
+                <div class="box__a">
+                    <a href="#">КАТАЛОГ</a>
+                </div>
+                <div class="box__a">
+                    <a href="#">ДОСТАВКА</a>
+                </div>
+                <div class="box__a">
+                    <a href="#">ПРО НАС</a>
+                </div>
+            </nav>
+        
+            <div class="user-actions">
+                <div href="" class="job">
+                    <img src="img/user.svg" alt="" class="user_icon">
+                    ВАКАНСІЇ
+                </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="img/Slider Image Flat White.png" alt="Декаф Флет Уайт">
+                </div>
+                
+                <div class="hero-content">
+                    <h1></h1>
+                    <p></p>
+                    <div class="price-buy">
+                        <span class="original-price">Професій</span>
+                        <span class="price"></span>
+                        <button class="buy-button">Переглянути</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-arrows">
+                <div class="arrow">❮</div>
+                <div class="arrow">❯</div>
+            </div>
+        </section>
+        
+        <div class="slider-pagination">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+
+        <!-- Features Section -->
+        <section class="features">
+            <P class="features-heading">ПЕРЕВАГИ</P>
+            <h2 class="features-title">Головні причини обрати види професій</h2>
+            
+            <div class="features-container">                            
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="img/art.png" alt="">
+                    </div>
+                    <h3 class="feature-title">Ті що створють</h3>
+                    <p class="feature-description">Можливість вигадати корисний вам продукт</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="img/worker.png" alt="">
+                    </div>
+                    <h3 class="feature-title">Ті що оформлюють</h3>
+                    <p class="feature-description">В вас завжди є місце для польоту фантазії</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="img/person.png" alt="">
+                    </div>
+                    <h3 class="feature-title">Ті що продають</h3>
+                    <p class="feature-description">Завжди у центрі увага, можна завести багато знайомств</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="img/shield.png" alt="">
+                    </div>
+                    <h3 class="feature-title">Ті що підримують</h3>
+                    <p class="feature-description">Дуже легка робота, якщо почати правильно</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section class="catalog">
+            <h2 class="catalog-title">Каталог професій</h2>
+            
+            <div class="catalog-container">
+                <div class="filters">
+                    <div class="price-filter">
+                        <h3 class="filter-title">Мінімальна зарплатня</h3>
+                        <input type="range" min="0" max="1000000" class="price-range">
+                        <div class="price-inputs">
+                            <input type="text" class="price-input" value="0">
+                            <input type="text" class="price-input" value="1000000">
+                        </div>
+                    </div>
+                    
+                    <div class="milk-filter">
+                        <h3 class="filter-title">Місце роботи</h3>
+                        <div class="filter-option">
+                            <input type="radio" id="milk-any" name="milk" checked>
+                            <label for="milk-any">Неважливо</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="radio" id="milk-animal" name="milk">
+                            <label for="milk-animal">Змішане</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="radio" id="milk-plant" name="milk">
+                            <label for="milk-plant">Тільки вдома</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="radio" id="milk-no" name="milk">
+                            <label for="milk-no">Тільки в офісі</label>
+                        </div>
+                    </div>
+                    
+                    <div class="country-filter">
+                        <h3 class="filter-title">Тип професії</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="country-brazil" checked>
+                            <label for="country-brazil">Неважливо</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="country-ethiopia">
+                            <label for="country-ethiopia">Ті що створюють</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="country-colombia">
+                            <label for="country-colombia">Ті що оформлюють</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="country-costa-rica">
+                            <label for="country-costa-rica">Ті що продають</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="country-peru">
+                            <label for="country-peru">Ті що підримують</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-button apply-button">Застосувати</button>
+                        <button class="filter-button reset-button">Скинути</button>
+                    </div>
+                </div>
+                
+                <div class="catalog-content">
+                    <div class="sorting">
+                        <span class="sorting-label">Сортування:</span>
+                        <select class="sorting-select" id="sortingSelect">
+                            <option value="за замовчуванням">за замовчуванням</option>
+                            <option value="за ціною">за зарплатою</option>
+                            <option value="за популярністю">за популярністю</option>
+                        </select>
+
+                    </div>
+                    
+                    <div class="products">
+
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="page-nav">❮ Назад</a>
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-nav">Вперед ❯</a>
+                </div>
+            </div>
+        </section>
+        <!-- Map Section -->
+        <iframe class="map-frame" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2679.2030790113063!2d35.16729307640484!3d47.81628197120992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5f5b85b97cfd%3A0x67ceb649b7b5d566!2z0KjQutC-0LvQsCDQutC-0LzQvyfRjtGC0LXRgNC90L7RlyDQvNCw0LnRgdGC0LXRgNC90L7RgdGC0ZY!5e0!3m2!1suk!2sua!4v1748071705328!5m2!1suk!2sua"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">\
+        </iframe>
+                <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                    <img src="img/shkm.png" alt="" class="logo-desktop">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Наші Сторінки</h3>
+                    <div class="footer-links">
+                        <a href="https://www.instagram.com/kompschool/" class="footer-link">
+                            <img src="img/Platform=Instagram, Color=Original.png" alt="">
+                            Інстаграм
+                        </a>
+                        <a href="https://www.facebook.com/ifkompschool/?locale=uk_UA" class="footer-link">
+                            <img src="img/Platform=Facebook, Color=Original.svg" alt="">
+                            Фейсбук
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Медіа</h3>
+                    <div class="footer-links">
+                        <a href="https://www.tiktok.com/@kompschool.zp" class="footer-link">
+                            <img src="img/Platform=TikTok, Color=Original.png" alt="">
+                            Тікток
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCyRHBzqWV_qZ3EccJaeDo5A" class="footer-link">
+                            <img src="img/Platform=YouTube, Color=Original.png" alt="">
+                            Ютуб
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-heading">Контакти</h3>
+                    <div class="footer-contact">
+                        <span>м. Запоріжжя вул.Шкільна 56</span>
+                    </div>
+                    <div class="footer-contact">
+                        <a href="https://xn--j1ae8a.in.ua/#page1" class="footer-link">
+                            <img src="img/Platform=Google, Color=Original.png" alt="">
+                            Наш Сайт
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
